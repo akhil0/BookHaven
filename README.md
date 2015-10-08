@@ -7,7 +7,7 @@ Functionalities:
 2) Search Authors and get info about the author. Also get all works by the particular author. 
 3) Check out  NYT Best Sellers for this week and get info about the books.
 
-API Used : 
+REST APIs Used :
 
 1) GoogleBooks
 2) Good Reads
