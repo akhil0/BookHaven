@@ -1,0 +1,50 @@
+﻿
+    var formatteddata = '';
+function onload() {
+    document.getElementById('bestsellerBookDetails').innerHTML = '';
+    var param = {
+        "title": "<%= Request.Params["term"] %>",
+        "key": "8738efc84c5687f351c52faff8bc4a92:11:71778832"
+    };
+var category = "<%= Request.Params["term"] %>";
+$.ajax({
+    url: "BestSellerHandler.ashx",
+    type: "POST",
+    data: param,
+    success: function (response) {
+        format_data(response,category);
+    },
+    error: function (x, e) {
+        document.getElementById('bestsellerBookDetails').innerHTML = '<br/><center><h2>The API is not responding right now..Please try again later..</h2></center>';
+    }
+});
+       
+}
+
+function format_data(xmldata,category)
+{
+    var book = $(xmldata).find('book').each(function(){
+        var book_title = $(this).find('title').first().text();
+        var book_image = $(this).find('book_image').first().text();
+        var book_isbn = $(this).find('isbn13').first().text();
+        formatteddata += '<div id="bookBlock">';
+        var no_image = "<img src='no_thumbnail.jpg' id='noImage2'/>";
+        if (book_image == '')
+        {
+            formatteddata += no_image;
+        }
+        else
+        {
+            formatteddata += '<div id="bstsllrImageDiv">';
+            formatteddata += '<a href="bestseller_bookdetails.aspx?isbn=' + book_isbn + '&category=' + category;
+            formatteddata += '&image='+book_image+'" target="_blank">';
+            formatteddata += '<img src="' + book_image + '" id="bstsllrImage" width="200" height="300"/></a></div>';
+        }
+            
+        formatteddata += '<div id="bstsllrTitleDiv">';
+        formatteddata += '<a href="bestseller_bookdetails.aspx?isbn=' + book_isbn + '&category=' + category + '" id="bstsllrTitle" target="_blank">';
+        formatteddata +=  book_title + '</a></div></div><hr/>';
+    }); 
+    document.getElementById('bestsellerBookDetails').innerHTML = formatteddata;
+}
+

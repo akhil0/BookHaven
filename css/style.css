@@ -1,0 +1,365 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url(http://fonts.googleapis.com/css?family=Poly);
+
+html {
+    height: 100%;
+}
+
+.counter {
+    background-color: burlywood;
+    color: indianred;
+    font-weight: bold;
+}
+
+body {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc2T40SlwK5J2u2xPFCNlNwVCwcjnNRJ3341J8MttoqUMrZMpU8g');
+    background-attachment: fixed;
+    margin: 0;
+    height: 100%;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+.footer_div {
+    text-align: center;
+    text-shadow: 0.7px 0.7px 0.7px #0F0F0F;
+    font-family: 'Handlee', cursive;
+    font-size: 15px;
+}
+
+
+textarea {
+    background: burlywood;
+    text-shadow: 0.7px 0.7px 0.7px #0F0F0F;
+    font-family: 'Handlee', cursive;
+    width: 80%;
+}
+
+#btn1 {
+    background: burlywood;
+    text-shadow: 0.7px 0.7px 0.7px #0F0F0F;
+    font-family: 'Handlee', cursive;
+}
+
+#search_button {
+    background: burlywood;
+    text-shadow: 0.7px 0.7px 0.7px #0F0F0F;
+    font-family: 'Handlee', cursive;
+}
+
+
+pre {
+    color: black;
+    text-shadow: 0.7px 0.7px 0.7px #0F0F0F;
+    font-family: 'Handlee', cursive;
+}
+
+#searchTextbox {
+    color: teal;
+    width: auto;
+    background: white;
+    border: 1px solid goldenrod;
+    -webkit-transition: background .3s;
+    transition: background .3s;
+}
+
+#textbox1 {
+    color: teal;
+    background: white;
+    border: 1px solid goldenrod;
+    -webkit-transition: background .3s;
+    transition: background .3s;
+}
+
+
+.title-text {
+    color: #ffffff;
+    font-family: 'Handlee', cursive;
+    font-size: 2em;
+    line-height: 82px;
+    vertical-align: middle;
+    margin: 0 25px;
+    text-shadow: 0 -1px 0 #143866, 0 -2px 0 #143866, 0 -3px 0 #143866;
+    display: inline;
+    background: #1c52a2;
+    padding: 5px 10px;
+    border-radius: 6px;
+    display: inline;
+    box-shadow: 2px 2px 0 #143866;
+}
+
+.results, #searchAuthorResults, #authorBooksDisplay {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    color: black;
+    text-shadow: 0.7px 0.7px 0.7px #0F0F0F;
+    margin-right: auto;
+    display: block;
+    font-family: 'Handlee', cursive;
+    width: auto;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    background-color: burlywood;
+    opacity: 0.9;
+}
+
+#bookDetails, #bestsellerDetails {
+    margin-top: 30px;
+    text-shadow: 0.7px 0.7px 0.7px #0F0F0F;
+    margin-bottom: 30px;
+    margin-left: auto;
+    color: black;
+    margin-right: auto;
+    display: block;
+    width: 77%;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    background-color: burlywood;
+    opacity: 0.94;
+    font-family: 'Handlee', cursive;
+    padding: 12px;
+}
+
+#bookSrchHead, #athrSrchHead, #bookDetailsHead, #bstsllrDetailsHead, p, #line1 {
+    color: #fff;
+    font-family: 'Pontano Sans', sans-serif;
+    font-size: 25px;
+    background-color: burlywood;
+    color: black;
+    text-align: center;
+    align-content: center;
+    opacity: 0.92;
+    border-radius: 10px;
+    text-shadow: 0.7px 0.7px 0.7px #0F0F0F;
+    font-family: 'Handlee', cursive;
+    width: 40%;
+    margin: auto;
+}
+
+
+#similarBooksBlock {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: burlywood;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 77%;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    font-family: 'Handlee', cursive;
+    opacity: 0.94;
+    padding: 12px;
+}
+
+#detailsBlock {
+    display: block;
+    border-radius: 15px;
+    margin-left: 20%;
+    margin-right: 10%;
+    color: black;
+    padding: 15px;
+    text-shadow: 0.7px 0.7px 0.7px #0F0F0F;
+    font-family: 'Handlee', cursive;
+    text-align: justify;
+    font-family: MoolBoran;
+    font-size: 30px;
+    color: #fff;
+}
+
+#bestsellerDetails {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-shadow: 0.7px 0.7px 0.7px #0F0F0F;
+    width: 77%;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    background-color: burlywood;
+    font-family: 'Handlee', cursive;
+    opacity: 0.94;
+    padding: 12px;
+}
+
+#detailsBlock2, #detailsBlock3 {
+    display: block;
+    border-radius: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 8%;
+    min-height: 400px;
+    max-height: 100%;
+    padding: 15px;
+    text-shadow: 0.7px 0.7px 0.7px #0F0F0F;
+    background-color: burlywood;
+    text-align: justify;
+    font-family: 'Handlee', cursive;
+    font-size: 15px;
+    color: black;
+    opacity: 0.92;
+}
+
+
+#book_image {
+    float: left;
+    margin-left: 2%;
+    width: 15%;
+    height: 10%;
+}
+
+.title-text small {
+    font-size: 0.5em;
+    text-shadow: none;
+    font-family: 'Poly';
+}
+
+.nav-holder {
+    background: burlywood;
+    width: 100%;
+    border-bottom: 1px solid #000000;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+}
+
+.nav {
+    width: 60%;
+    margin: 0 auto;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    font-family: 'Handlee', cursive;
+}
+
+.navcon {
+    min-width: 80px;
+    background: burlywood;
+    color: black;
+    height: 40px;
+    padding: 0 10px;
+    font-family: 'Handlee', cursive;
+    line-height: 40px;
+    font-family: 'Oswald';
+    font-size: 1em;
+    vertical-align: middle;
+    text-align: center;
+    display: inline-block;
+    text-shadow: 0.7px 0.7px 0.7px #0F0F0F;
+}
+
+    .navcon a {
+        color: black;
+        font-family: 'Handlee', cursive;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        text-decoration: none;
+    }
+
+    .navcon:hover {
+        color: #ffffff;
+        background: #1c52a2;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        text-shadow: 0.7px 0.7px 0.7px #0F0F0F;
+    }
+
+.container {
+    width: 60%;
+    min-height: 100%;
+    margin: 0 auto;
+    left: 20%;
+    position: absolute;
+    font-family: 'Handlee', cursive;
+    top: 0;
+    z-index: -100;
+    color: black;
+    box-shadow: 0 0 50px rgba(1,1,1,0.05);
+}
+
+
+#title1, #title2, #title3, #title4, #title5, #title6, #title7, #title8, #title9, #title10,
+#title11, #title12, #title13, #title14, #title15, #title16, #title17, #title18, #title19, #title20,
+#title21, #title22, #title23, #title24, #title25, #title26, #title27, #title28, #title29, #title30,
+#title31, #title32, #title33, #title34, #title35, #title36, #title37, #title38, #title39, #title40,
+#title41, #title42, #title43, #title44, #title45, #title46 {
+    outline: none;
+    text-decoration: underline;
+    color: black;
+    text-shadow: 0.7px 0.7px 0.7px #0F0F0F;
+    font-size: 20px;
+    font-family: 'Handlee', cursive;
+    padding: 25px;
+}
+
+
+.content {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    background-color: burlywood;
+    color: black;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    opacity: 0.95;
+    box-shadow: 2px 9px 134px -10px rgba(252,249,252,1);
+    font-family: 'Handlee', cursive;
+    padding: 0 0 50px 0;
+}
+
+.article {
+    margin: 25px 25px 5px;
+    background-color: burlywood;
+    display: block;
+    line-height: 1.75em;
+    color: black;
+    font-family: 'Handlee', cursive;
+    font-size: 1em;
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 560px) {
+    .container {
+        width: 100%;
+        left: 0;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .nav {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .navcon {
+        min-width: 100%;
+        background: burlywood;
+        color: #ffffff;
+        height: 40px;
+        padding: 0 10px;
+        line-height: 40px;
+        font-family: 'Oswald';
+        font-size: 1em;
+        vertical-align: middle;
+        text-align: center;
+        display: inline-block;
+        text-shadow: 0 -1px 0 #000000, 0 -2px 0 #000000;
+    }
+
+    textarea {
+        width: 40%;
+    }
+
+
+    #textbox1 {
+        color: teal;
+        background: transparent;
+        border: 1px solid goldenrod;
+        -webkit-transition: background .3s;
+        transition: background .3s;
+    }
+}
